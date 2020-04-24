@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Recursividad recursividad = new Recursividad();
+		RecursividadLista recursividad = new RecursividadLista();
 		
 	}
 	

@@ -1,21 +1,23 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Recursividad {
+public class RecursividadLista {
 
 	
 	
-	public Recursividad() {
+	public RecursividadLista() {
 		super();
 		List<Integer> lista = new ArrayList<Integer>();
 		
-		lista = getIntUntilZero(5, lista);
+		System.out.println("---- Recursividad retorno Lista -----");
+		
+		lista = getIntegerListUntilZero(5, lista);
 		
 		imprimeLista(lista);
 	}
 
 
-	public List<Integer> getIntUntilZero(int level, List<Integer> lista){
+	public List<Integer> getIntegerListUntilZero(int level, List<Integer> lista){
 		System.out.println("level: " + level + " lista size: " + lista.size());
 		
 		lista.add(level);
@@ -24,7 +26,7 @@ public class Recursividad {
 			return lista;
 		}
 		
-		lista = getIntUntilZero(--level, lista);
+		lista = getIntegerListUntilZero(--level, lista);
 		
 		return lista;
 	}
